@@ -30,7 +30,10 @@
       <%= simple_form_for [ @restaurant, @review ] do |f| %>
         <%= f.input :rating %>
         <%= f.input :content %>
-        <%= f.submit "Add review", class: "btn btn-primary text-white" %>
+
+        <%= hidden_field_tag 'loc', 'show' %>
+
+        <%= f.submit "Add review", class: "btn btn-primary text-white mt-3" %>
       <% end %>
 
     </div>
