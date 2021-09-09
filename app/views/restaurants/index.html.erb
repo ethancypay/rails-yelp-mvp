@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Restaurants</h1>
+
+  <%= link_to 'Add new restaurant', new_restaurant_path, class: 'btn btn-primary text-white mb-3' %>
+
+  <ul>
+    <%= render @restaurants %>
+  </ul>
+
+</div>
